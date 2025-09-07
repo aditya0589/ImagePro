@@ -131,4 +131,4 @@ Developed by Aditya.
 ## Contact
 For questions or feedback, please open an issue on the GitHub repository or contact the developer at yraditya895@gmail.com.
 
-Last updated: May 23, 2025
+Last updated: September 7, 2025 (upgraded the model to Nano banana (gemini-2.5-flash-image-preview)
