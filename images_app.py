@@ -13,6 +13,7 @@ load_dotenv()
 # Configure page
 st.set_page_config(page_title="ImagePro Chat & Editor", page_icon="🖼️")
 
+
 # Initialize Google genai client
 try:
     client = genai.Client()
@@ -58,6 +59,7 @@ if edit_button:
 
 # Main page
 st.title("🖼️ ImagePro: AI Image Generation & Chat")
+st.subheader("Now powered by Gemini Nano Banana")
 st.subheader("A product by Aditya")
 st.write("Generate images, chat with AI to suggest improvements, and regenerate images.")
 
@@ -150,4 +152,5 @@ else:
 
             except Exception as e:
                 st.error(f"Error generating content: {e}")
+
 
