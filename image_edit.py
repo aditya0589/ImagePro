@@ -20,7 +20,7 @@ def edit_image(image, edit_prompt):
         
         # Call the generate_content API with image and edit prompt
         response = client.models.generate_content(
-            model="gemini-2.5-flash-image-preview",
+            model="gemini-2.0-flash-preview-image-generation",
             contents=[edit_prompt, image],
             config=types.GenerateContentConfig(
                 response_modalities=['TEXT', 'IMAGE']
@@ -48,3 +48,4 @@ def edit_image(image, edit_prompt):
     except Exception as e:
 
         return None, None, f"Error editing image: {e}"
+
