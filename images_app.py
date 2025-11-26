@@ -73,7 +73,7 @@ if st.button("Generate Image"):
         with st.spinner("Generating image..."):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.0-flash-preview-image-generation",
+                    model="imagen-3.0-generate-002",
                     contents=initial_prompt,
                     config=types.GenerateContentConfig(response_modalities=['TEXT', 'IMAGE'])
                 )
@@ -151,6 +151,7 @@ else:
 
             except Exception as e:
                 st.error(f"Error generating content: {e}")
+
 
 
 
